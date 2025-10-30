@@ -1,3 +1,4 @@
+import Image from 'next/image'
 // app/page.jsx
 export const metadata = {
   title: 'AMRAJONA — سرّ المذاق الأصيل',
@@ -86,6 +87,157 @@ export default function Page() {
       <footer className="text-center text-sm text-gray-500 py-6">
         © {new Date().getFullYear()} AMRAJONA — Taste the Tradition
       </footer>
+      {/* --- HERO / معرفی برند --- */}
+<section className="mt-12 rounded-2xl overflow-hidden bg-neutral-900/40 ring-1 ring-white/10">
+  <div className="relative">
+    <Image
+      src="/images/hero.jpg"
+      alt="AMRAJONA - Taste the Tradition"
+      width={1600}
+      height={700}
+      priority
+      className="w-full h-auto object-cover opacity-90"
+    />
+    <div className="absolute inset-0 flex items-center justify-center text-center p-6">
+      <div className="max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow">
+          AMRAJONA – Taste the Tradition
+        </h1>
+        <p className="mt-3 text-lg md:text-2xl text-white/90">
+          سرّ المذاق الأصيل
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* --- محصولات منتخب --- */}
+<section className="mt-12">
+  <h2 className="text-2xl font-bold">محصولات منتخب</h2>
+  <p className="text-sm text-white/70 mt-1">مواد غذایی خشک و اصیل خاورمیانه</p>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/tomato-paste.jpg" alt="Tomato Paste" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">معجون الطماطم • Tomato Paste</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/olive-oil.jpg" alt="Olive Oil" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">زیتون بکر • Extra Virgin Olive Oil</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/green-olives.jpg" alt="Green Olives" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">زیتون سبز • Green Olives</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/pickled-cucumber.jpg" alt="Pickled Cucumber" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">خیارشور • Pickled Cucumber</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/tahini.jpg" alt="Tahini" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">طحینه • Tahini</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* --- تماس --- */}
+<section className="mt-12 p-5 rounded-2xl ring-1 ring-white/10 bg-black/30">
+  <h2 className="text-2xl font-bold">تماس</h2>
+  <p className="mt-2">Belgium, Wervik</p>
+  <p className="mt-1">Phone: <a href="tel:+32467673996" className="underline">+32 467 673 996</a></p>
+  <p>Phone: <a href="tel:+32493591776" className="underline">+32 493 591 776</a></p>
+  <p className="mt-2 text-white/70">AMRAJONA – Taste the Tradition | سرّ المذاق الأصيل</p>
+</section>
+      {/* --- HERO / معرفی برند --- */}
+<section className="mt-12 rounded-2xl overflow-hidden bg-neutral-900/40 ring-1 ring-white/10">
+  <div className="relative">
+    <Image
+      src="/images/hero.jpg"
+      alt="AMRAJONA - Taste the Tradition"
+      width={1600}
+      height={700}
+      priority
+      className="w-full h-auto object-cover opacity-90"
+    />
+    <div className="absolute inset-0 flex items-center justify-center text-center p-6">
+      <div className="max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow">
+          AMRAJONA – Taste the Tradition
+        </h1>
+        <p className="mt-3 text-lg md:text-2xl text-white/90">
+          سرّ المذاق الأصيل
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* --- محصولات منتخب --- */}
+<section className="mt-12">
+  <h2 className="text-2xl font-bold">محصولات منتخب</h2>
+  <p className="text-sm text-white/70 mt-1">مواد غذایی خشک و اصیل خاورمیانه</p>
+
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-6">
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/tomato-paste.jpg" alt="Tomato Paste" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">معجون الطماطم • Tomato Paste</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/olive-oil.jpg" alt="Olive Oil" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">زیتون بکر • Extra Virgin Olive Oil</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/green-olives.jpg" alt="Green Olives" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">زیتون سبز • Green Olives</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/pickled-cucumber.jpg" alt="Pickled Cucumber" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">خیارشور • Pickled Cucumber</h3>
+      </div>
+    </div>
+
+    <div className="rounded-xl overflow-hidden ring-1 ring-white/10 bg-black/30">
+      <Image src="/images/tahini.jpg" alt="Tahini" width={640} height={640} className="w-full h-auto object-cover" />
+      <div className="p-3">
+        <h3 className="font-semibold">طحینه • Tahini</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* --- تماس --- */}
+<section className="mt-12 p-5 rounded-2xl ring-1 ring-white/10 bg-black/30">
+  <h2 className="text-2xl font-bold">تماس</h2>
+  <p className="mt-2">Belgium, Wervik</p>
+  <p className="mt-1">Phone: <a href="tel:+32467673996" className="underline">+32 467 673 996</a></p>
+  <p>Phone: <a href="tel:+32493591776" className="underline">+32 493 591 776</a></p>
+  <p className="mt-2 text-white/70">AMRAJONA – Taste the Tradition | سرّ المذاق الأصيل</p>
+</section>
+
     </main>
   );
 }
